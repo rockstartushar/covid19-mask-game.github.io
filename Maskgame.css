@@ -1,0 +1,40 @@
+#strtbtn, #Pause {
+  text-decoration: none;
+  background: #db4938;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+
+  width: 100%;
+}
+#scr {
+  width: auto;
+  height: 495px;
+  position: relative;
+  background-image: url('gocorona.jpg');
+}
+.crazy {
+  background:
+  transparent;
+  border: none;
+  visibility: hidden;
+}
+#game-share-btn {
+  color: white;
+  background: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+}
+#scotxt {
+  margin-left: 35%;
+}
+#timetxt {
+  margin-left: 35%;
+}
+#scotxt,#timetxt {
+  width: 10%;
+}
+#score,#scokbaad, #timesec, #time {
+  width: 5%;
+}
