@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>A lock-down  game</title>
+  <link rel="stylesheet" href="Maskgame.css" title="" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <input type="button" id="strtbtn" value="Begin Play" onclick="gameplay()" />
+    <div id="game-zone">
+      <span id="scotxt"><b>Score:</b></span>
+      <span id="score">0</span><span id="scokbaad">/15</span>
+      <div id="scr">
+        <button class="crazy" id="0" onclick="oncatch(id)">
+          😗
+        </button>
+        <button class="crazy" id="1" onclick="oncatch(id)">
+          🤑
+        </button>
+        <button class="crazy" id="2" onclick="oncatch(id)">
+          🤪
+        </button>
+        <button class="crazy" id="3" onclick="oncatch(id)">
+          🤤
+        </button>
+        <button class="crazy" id="4" onclick="oncatch(id)">
+          😅
+        </button>
+        <button class="crazy" id="5" onclick="oncatch(id)">
+          😶
+        </button>
+        <button class="crazy" id="6" onclick="oncatch(id)">
+          😑
+        </button>
+        <button class="crazy" id="7" onclick="oncatch(id)">
+          😏
+        </button>
+        <button class="crazy" id="8" onclick="oncatch(id)">
+          😥
+        </button>
+        <button class="crazy" id="9" onclick="oncatch(id)">
+          😥
+        </button>
+        <button class="crazy" id="10" onclick="oncatch(id)">
+          🤠
+        </button>
+        <button class="crazy" id="11" onclick="oncatch(id)">
+          😠
+        </button>
+        <button class="crazy" id="12" onclick="oncatch(id)">
+          😵
+        </button>
+        <button class="crazy" id="13" onclick="oncatch(id)">
+          🧐
+        </button>
+        <button class="crazy" id="14" onclick="oncatch(id)">
+          🤪
+        </button>
+      </div>
+      <span id="timetxt"><b>Time:</b></span>
+      <span id="time"></span><span id="timesec"> sec</span>
+    </div>
+  </div>
+  <a href=""><input type="button" id="Pause" value="Restart Game" /></a>
+  <script type="text/javascript" charset="utf-8" src="Maskgame.js">
+  </script>
+</body>
+</html>
