@@ -1,0 +1,189 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 300%;
+  background-color: black;
+}
+header {
+  text-align: center;
+  background-image: linear-gradient(to right, purple, black);
+}
+header h1 {
+  width: 30%
+  border: 5px solid saddlebrown;
+  color: bisque;
+  padding: 20px 15%;
+}
+header h1 img {
+  width: 70px;
+  border-radius: 30px;
+  margin: auto 20px;
+  animation: scan 4s infinite;
+}
+header h3 {
+  color: indigo;
+  padding: 1%;
+}
+section {
+  padding: 20px 32px;
+  background-color: black;
+  color: white;
+}
+section p {
+  font-size: 200%;
+  margin: 30px 10px;
+}
+section ul {
+  margin: 20px 10%;
+  list-style: devanagari;
+}
+section ul li {
+  margin: 50px auto 30px auto;
+}
+section form #userName {
+  width: 48%;
+  margin: auto 25%;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 1% 1rem;
+  font-size: larger;
+  text-align: center;
+  outline: none;
+}
+section form #userName: focus{
+  background-color: black;
+  outline: none;
+  color: white;
+}
+section form a {
+  text-decoration: none;
+}
+section .hrStyles {
+  border: 4px solid darkblue;
+  border-radius: 90px;
+  width: 53%;
+}
+
+#strtbtn{
+  background: chartreuse;
+  color: black;
+  font-size: larger;
+  padding: 1% 1rem;
+  border-radius: 40px;
+  width: 20%;
+  margin: 50px 40%;
+} 
+#Pause {
+  float: right;
+  color: white;
+  background-color: chartreuse;
+  border-radius: 55px;
+  font-size: 80%;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+}
+
+#gameZone {
+  display: none;
+  background-color: black;
+}
+
+#gameTopSec {
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+#restartSec{
+  margin-right: 20%;
+  width: 20%;
+  float: right;
+  top: 0;
+}
+#scoreSec {
+  float: left;
+  width: 70%;
+  top: 0;
+}
+#timeSec {
+  width: 100%;
+  text-align: center;
+  height: 5%;
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+}
+
+#scotxt,#timetxt {
+  color: white;
+}
+
+#score,#scokbaad, #timesec, #time {
+  color: white;
+}
+
+#scr {
+  width: auto;
+  position: relative;
+  background-image: url('gocorona.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 80%;
+}
+.crazy {
+  background: transparent;
+  border: none;
+  visibility: hidden;
+  font-size: 200%;
+}
+
+#game-share-btn {
+  color: white;
+  background: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+footer {
+  padding: 2%;
+  text-align: center;
+  background-color: honeydew;
+  position: static;
+}
+a:hover,input: hover {
+  font-size: 100%;
+  opacity: 0.6;
+  color: white;
+  background-color: black;
+}
+@keyframes scan {
+  0%{
+    opacity: 0
+    border: 1px solid white;
+  }
+  50%{
+    opacity: 0.6
+  }
+  100%{
+    opacity: 0.9
+    border: 3px solid white;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body {
+    font-size: 150%;
+  }
+  section p{
+    font-size: 150%;
+  }
+}
