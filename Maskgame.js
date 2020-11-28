@@ -65,8 +65,10 @@ const startAnimation = (id = 16) => {
         console.log(screen.height, screen.width);
         elem[(Math.floor(Math.random()*(max - min) + min))].style.marginTop = posV + "px";
         elem[(Math.floor(Math.random()*(max - min) + min))].style.marginLeft = posH + "px";
-        posH += 50;
         posV += 300;
+        elem[(Math.floor(Math.random()*(max - min) + min))].style.marginTop = posV + "px";
+        posH += 150;
+
       }
     }
   }
@@ -101,10 +103,8 @@ function oncatch(id) {
     game_Zone.style.display = "none";
     var scoreCont = document.getElementById("scoreCard");
     header.style.display = "block";
-    var scoreboard = `<p style="font-size:200%;"><strong>Great Job Warrior!!</strong></p><hr class="hrStyles"><p style="font-size: 100%;">You have completed this game in ${Time} seconds!!</p>
-    <a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing lockdown game💖💖..check your concentration and focus level🤷‍♂🤔🤔 https://rockstartushar.github.io/covid19-mask-game.io/ ..🙏have fun.. " data-action="share/whatsapp/share" target="_blank"> Share on whatsapp!!</a>
-    <br/><a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href="">Play Again</a>`
-    scoreCont.innerHTML = scoreboard;
+    var scoreboard = `You have completed this game in ${Time} seconds!!`
+    document.getElementById("scrTime").innerHTML = scoreboard;
     scoreCont.style.display ="block";
   }
 }
