@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--  https://rockstartushar.github.io/covid19-mask-game.github.io/ -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <title>A lock-down game</title>
@@ -9,7 +10,7 @@
 </head>
 <body>
   <header id="header">
-    <h1>Covid-19 Mask Game<img src="mask.png"></h1>
+    <h1>Covid-19 Mask Game<br><img src="mask.png"></h1>
     <hr>
     <h3>A LockDown Game</h3>
   </header>
@@ -24,6 +25,7 @@
     </ul>
     <form>
       <input type="text" id="userName" name="userName" placeholder="Your Name">
+      <br>
       <a href="#gameZone"><input type="button" id="strtbtn" value="Play" onclick="gameplay()" /></a>
     </form>
   </section>
@@ -89,7 +91,15 @@
       <span id="time">0</span><span id="timesec"> sec</span>
     </section>
   </div>
-  <section id="scoreCard"></section>
+  <section id="scoreCard">
+    <p style="font-size:200%;">
+      <strong>Great Job Warrior!!</strong>
+    </p>
+    <hr class="hrStyles">
+    <p id="scrTime" style="font-size: 100%;"></p>
+    <a id="shareBtn" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing lockdown game💖💖..check your concentration and focus level🤷‍♂🤔🤔 https://rockstartushar.github.io/covid19-mask-game.github.io/ ..🙏have fun.. " data-action="share/whatsapp/share" target="_blank"> Share on whatsapp!!</a><br><br>
+    <a id="playAgain" href="">Play Again</a>
+  </section>
   <footer>
       All &copy;copyright reserved to Tushar Dangayach.
   </footer>
