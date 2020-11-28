@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>A lock-down  game</title>
+  <link rel="stylesheet" href="Maskgame.css" title="" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <h1>Covid-19 Mask Game<img src="mask.png"></h1>
+    <hr>
+    <h3>A LockDown Game</h3>
+  </header>
+  <section id="gameIntro">
+    <p><b>About Game!!</b></p>
+    <hr class="hrStyles">
+    <ul>
+      <li>After Clicking below btn, a game screen will be visible.</li>
+      <li>Concentrate and click on the emoji, to make them wear mask.</li>
+      <li>You have to click on 15 emojis in minimum time to complete the game.</li>
+      <li>Let see how much you score, Enjoy playing:)</li>
+    </ul>
+    <form>
+      <input type="text" id="userName" name="userName" placeholder="Your Name">
+      <a href="#gameZone"><input type="button" id="strtbtn" value="Play" onclick="gameplay()" /></a>
+    </form>
+  </section>
+  <div id="gameZone">
+    <section id="gameTopSec">
+      <section id="scoreSec">
+        <span id="scotxt"><b>Score:</b></span>
+        <span id="score">0</span><span id="scokbaad">/15</span>
+      </section>
+      <section id="restartSec">
+        <a href="" id="Pause">Restart</a>
+      </section>
+    </section>
+    <div id="scr">
+      <button class="crazy" onclick="oncatch(id)" id="0">
+        😗
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="1">
+        🤑
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="2">
+        🤪
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="3">
+        🤤
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="4">
+        😅
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="5">
+        😶
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="6">
+        😑
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="7">
+        😏
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="8">
+        😥
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="9">
+        😥
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="10">
+        🤠
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="11">
+        😠
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="12">
+        😵
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="13">
+        🧐
+      </button>
+      <button class="crazy" onclick="oncatch(id)" id="14">
+        🤪
+      </button>
+    </div>
+    <section id="timeSec">
+      <span id="timetxt"><b>Time:</b></span>
+      <span id="time">0</span><span id="timesec"> sec</span>
+    </section>
+  </div>
+  <section id="scoreCard"></section>
+  <footer>
+      All &copy;copyright reserved to Tushar Dangayach.
+  </footer>
+  <script type="text/javascript" charset="utf-8" src="Maskgame.js">
+  </script>
+</body>
+</html>
