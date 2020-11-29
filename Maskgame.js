@@ -90,7 +90,7 @@ function oncatch(id) {
   if(!cache[id]) {
   if (id <= 15) {
     var elem = document.getElementById(id);
-    elem.innerHTML = "😷";
+    elem.innerHTML = "&#128567";
     var dispan = document.getElementById("score");
     dispan.innerHTML = Number(dispan.innerHTML)+1;
     var score = dispan.innerHTML;
